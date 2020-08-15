@@ -7,7 +7,7 @@ def detectredlight():
     count=0
     cap = cv2.VideoCapture("acc.asf")
     out = cv2.VideoWriter(
-    'output.avi',
+    'output.asf',
     cv2.VideoWriter_fourcc(*'MJPG'),
     15.,
     (640,480))
@@ -47,13 +47,13 @@ def detectredlight():
 
             (minVal, maxVal, minLoc, maxLoc) = cv2.minMaxLoc(gray)
 
-            cv2.circle(img, maxLoc, 5, (255, 180, 180), 2)
+            #cv2.circle(img, maxLoc, 5, (255, 180, 180), 2)
 
-    # hough circle detect
+            
             r_circles = cv2.HoughCircles(maskr, cv2.HOUGH_GRADIENT, 1, 80,
                                param1=50, param2=10, minRadius=0, maxRadius=30)
 
-            # traffic light detect
+            
             radius = 5
             bound = 4.0 / 10
             if r_circles is not None:
@@ -72,7 +72,7 @@ def detectredlight():
                             h_1 += maskr[i[1]+m, i[0]+n]
                             s_1 += 1
                     if h_1 / s_1 > 50:
-                        cv2.circle(cimg, maxLoc, i[2]+10, (0, 255, 0), 2)
+                        cv2.circle(cimg, (i[0], i[1]), i[2]+10, (0, 255, 0), 2)
                         cv2.circle(maskr, (i[0], i[1]), i[2]+30, (255, 255, 255), 2)
                         cv2.putText(cimg,'RED',(i[0], i[1]), font, 1,(255,0,0),2,cv2.LINE_AA)
 
