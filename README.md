@@ -14,9 +14,8 @@ The dataset videos are provided by Synergy Labs for the task completion.
 ```
 The Github repository contains the Python script - ​detection.py
  Just clone the repository and run the file.
- The outputs videos on the dataset provided are under the​ outputs folder.
 ```
-
+The outputs videos on the dataset provided are at : https://drive.google.com/drive/folders/1MJ4tOJo6YyJYuwGHUGisC4jlLBasfh1H?usp=sharing
 ### References:
  https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgpr oc/py_houghcircles/py_houghcircles.html#hough-circles
 
