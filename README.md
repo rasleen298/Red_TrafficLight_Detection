@@ -13,10 +13,11 @@ The dataset videos are provided by Synergy Labs for the task completion.
 ## Instructions
 ```
 The Github repository contains the Python script - ​detection.py
-● Just clone the repository and run the file.
-● The outputs videos on the dataset provided are under the​ outputs folder.
+ Just clone the repository and run the file.
+ The outputs videos on the dataset provided are under the​ outputs folder.
 ```
 
 ### References:
-● https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgpr oc/py_houghcircles/py_houghcircles.html#hough-circles
-● https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgpr oc/py_colorspaces/py_colorspaces.html
+ https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgpr oc/py_houghcircles/py_houghcircles.html#hough-circles
+
+ https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgpr oc/py_colorspaces/py_colorspaces.html
