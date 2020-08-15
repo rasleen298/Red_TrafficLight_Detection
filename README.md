@@ -9,6 +9,7 @@ NumPy
 I have devised an algorithm that detects the red traffic light in the video feed. It can be modified for real-time feed as well. The algorithm uses HSV variations of the color and techniques including hough circle transform, color detection, and object tracking, and detects the lights in real-time.
 The parameters can be modified further for better accuracy.
 
+The dataset videos are provided by Synergy Labs for the task completion.
 ## Instructions
 ```
 The Github repository contains the Python script - ​detection.py
